@@ -1,0 +1,123 @@
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(to right, #ec60f3, #d82525);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+    overflow: hidden;
+}
+
+#question-container {
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    height: 50%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.question{
+    background-color: #e52e86;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 60px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s, transform 0.5s ease-in-out;
+    color: white;
+    height: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.yes-button {
+    background-color: rgb(43, 237, 127);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.no-button {
+    background-color: rgb(231, 78, 78);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 1s ease;
+    cursor: pointer;
+}
+
+#question4 .no-button:hover {
+    background-color: rgb(43, 237, 127);
+    color: white;
+    content: 'Yes';
+}
+
+#question .no-button {
+    
+    z-index: 9999999;
+}
+#question5 .no-button:hover{
+    transition: transform 1s ease;
+}
+
+
+
+.image {
+    margin-top: 15px;
+    width: 100px;
+    height: auto;
+    margin-left: 110px;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.flash {
+    animation: flash 0.5s ease-in-out;
+    display: block;
+}
+
+#flashing-image {
+    display: none;
+    position: fixed;
+    top: 0%;
+    right: 1%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999;
+    opacity:0;
+}
+
+#ending {
+    background-color: #ff5c8f;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transform: translateY(30px);
+    transition: opacity 0.3s, transform 0.5s ease-in-out;
+    font-size: 18px;
+}
+
+#ending-img{
+    margin-left: 35%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valentine's Day!!</title>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="root"></div>
+        <div id="question-container">
+            <div id="question0" class="question">
+                <p id="question0-text">Assalamalaikum fine shyt!! Might you be able to spare a few minutes to answer some questions??</p>
+                <button class="yes-button" onclick="showQuestion(1)">Yes</button>
+                <button class="no-button" onclick="greetNoButton()">No</button>
+                <img src="https://media.tenor.com/gZyY9aYHgMwAAAAj/snoopy.gif" alt="Snoopy" class="image" id="question0-img">
+            </div>
+            <div id="question1" class="question">
+                <p id="question1-text">Yippee!! Are you single?</p>
+                <button class="yes-button" onclick="showQuestion(2)">No</button>
+                <button class="no-button" onclick="q1NoButton()">Yes</button>
+                <img src="https://imgcdn.sigstick.com/qVfnB9UPebIaArZhyUaw/cover-1.png" alt="mofusand" class="image" id="question1-img">
+            </div>
+            <div id="question2" class="question">
+                <p id="question2-text">Woohoo!!! Do you love your boyfriend?</p>
+                <button class="yes-button" onclick="showQuestion(3)">Yes</button>
+                <button class="no-button" onclick="q2NoButton()">No</button>
+                <img src="https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/64634961e09531a27f702280_78.png" alt="why" class="image" id="question2-img">
+            </div>
+            <div id="question3" class="question">
+                <p id="question3-text">GOOD. How much do you like your boyfriend??</p>
+                <button class="yes-button" onclick="showQuestion(4)">ALOT!</button>
+                <button class="no-button" onclick="q3NoButton()">not at all.</button>
+                <img src="https://cdn.inspireuplift.com/uploads/images/seller_products/44699/1706941361_2501241039-cute-snoopy-valentine-love-hearts-svg-2501241039png.png" alt="snoopy heart" class="image" id="question3-img">
+            </div>
+            <div id="question4" class="question">
+                <p>Will you be free this Friday??</p>
+                <button class="yes-button" onclick="showQuestion(5)">Yes</button>
+                <button class="no-button" onclick="showQuestion(5)" onmouseover="q4NoHover(this)" onmouseout="q4NoUnhover(this)">No</button>
+                <img src="https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/64fad58878a92d721c9d7084_41.png" alt="scheme" class="image" id="question4-img">
+            </div>
+            <div id="question5" class="question">
+                <p>Great!! Will you be my Valentine?</p>
+                <button class="yes-button" onclick="showQuestion(6)">Yes</button>
+                <button class="no-button" onmouseover="q5NoHover(this)" onfocus="q5NoHover(this)">No</button>
+                <img src="https://www.inspireuplift.com/resizer/?image=https://cdn.inspireuplift.com/uploads/images/seller_products/29625/1705360653_0601241072-happy-valentines-day-snoopy-svg-0601241072png.png&width=250&height=250&quality=80&format=auto&fit=cover" alt="snoopy heart" class="image" id="question5-img">
+            </div>
+            <div id="ending" class="question" style="display: none;">
+                <p>YAYYYYY I LOVE YOUU!!! Thanks for being so patient with me, you mean the world to me.</p>
+                <img src="https://pngimg.com/d/snoopy_PNG17.png" alt="snoopy" class="image" id="ending-img">
+                <button onclick="window.location.reload()">Start Over?</button>
+            </div>
+        </div>
+        <img id='flashing-image' src="https://bluemoji.io/cdn-proxy/646218c67da47160c64a84d5/64faebd1de09220dbf214250_93.png" alt="why" class="image">
+
+        <script src="script.js"></script>
+    </body>
+
+
+
+</html>
